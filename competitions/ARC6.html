@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Arc1-final.css">
+    <title>ARC6</title>
+    <style>
+      .perant .imag-left{
+        background-image: url("images/ARC6/1 (5).jpg ");
+      }
+      .perant .imag-center{
+        background-image: url("images/ARC6/1 (26).jpg"); 
+      }
+      .perant .imag-right{
+        background-image: url("images/ARC6/1 (24).jpg ");
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" class="logo">
+    </header>
+    <main>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">ARC6</button>
+            <div class="dropdown-content">
+             <a href="ARC-final.html">ARC 1</a>
+              <a href="ARC2.html">ARC 2</a>
+              <a href="ARC3.html">ARC 3</a>
+              <a href="ARC4.html">ARC 4</a>
+              <a href="ARC5.html">ARC 5</a>
+              <a href="ARC7.html">ARC 7</a>
+              
+            </div>
+          </div>
+        <div class="perant">
+            <div class="imag-left" style="align-self: center;"> </div>  
+            <div class="imag-center"></div>
+            <div class="imag-right" style="align-self: center;"> </div>
+            </div>
+            <div class="perant2">
+                <h2 > Objective </h2>
+                <p>
+                    <b>Date:</b> 12/5/2015 to 15/5/2015
+                    <br>
+                    <b>teams:</b> 5 team 
+                    <br>
+                    <b>Winning teams :-</b> 
+                    <br>
+                    <b>Frist place :</b> Black team
+                    <br>
+                    <b>Second place :</b>  Red team 
+                    <br>
+                    <b>the third plsce :</b> White team
+                    <br>
+                </p>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="images/ARC6/1 (30).jpg " style="width:100% ;height:300px;">
+                  <div class="text">ARC1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="images/ARC6/1 (14).jpg " style="width:100% ;height:300px;">
+                  <div class="text">ARC1</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="images/ARC6/1 (8).jpg " style="width:100% ;height:300px;">
+                  <div class="text">ARC1</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/ARC6/1 (9).jpg " style="width:100% ;height:300px;">
+                    <div class="text">ARC1</div>
+                  </div>
+                  
+                
+                
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                 
+                </div>
+            </div> 
+        </main> 
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>  
+</body>
+</html>
